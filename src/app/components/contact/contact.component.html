@@ -1,0 +1,76 @@
+<app-nav-bar></app-nav-bar>
+
+<div>
+
+ <section>
+    
+    <h2>Please Fill The Form</h2>
+
+    <form [formGroup]="registerForm">
+
+        <br> 
+    
+        <mat-form-field>
+            <mat-label>Name </mat-label>
+            <input type="text" matInput placeholder="name" formControlName="name"> <br><br>
+            <mat-error *ngIf="nameInput.hasError('required')">
+                Please enter name
+            </mat-error>
+        </mat-form-field>
+        
+        <br>
+    
+        <mat-form-field>
+            <mat-label>Occupation: </mat-label>
+            <input type="text" matInput placeholder="occupation" formControlName="occupation">
+        </mat-form-field>
+    
+        <br>
+    
+        <mat-form-field>
+            <mat-label>Email: </mat-label> 
+            <input type="email" matInput placeholder="email" formControlName="email"> 
+            <mat-error *ngIf="emailInput.hasError('required')">
+                Please enter email address
+            </mat-error>
+            <mat-error *ngIf="emailInput.hasError('email')">
+                Please enter a valid email address
+            </mat-error>
+        </mat-form-field>
+    
+        
+        <br>
+    
+        <mat-form-field>
+            <mat-label>Subject: </mat-label>
+            <input type="text" matInput placeholder="subject" formControlName="subject"> 
+            <mat-error *ngIf="subjectInput.hasError('required')">
+                Please enter subject
+            </mat-error>
+        </mat-form-field>
+    
+        <br>
+    
+        <mat-form-field>
+            <mat-label>Content: </mat-label>
+            <textarea type="text" matInput placeholder="content" formControlName="content"></textarea>
+            <mat-error *ngIf="contentInput.hasError('required')">
+                Please enter content
+            </mat-error>
+            <mat-error *ngIf="contentInput.hasError('minlength')">
+                The minimum number of characters allowed is 10 characters
+            </mat-error>
+            <mat-error *ngIf="contentInput.hasError('maxlength')">
+                The maximum number of characters allowed is 255 characters
+            </mat-error>     
+        </mat-form-field>
+    
+        <br>
+    
+        <button mat-raised-button color="primary" [disabled]="registerForm.invalid" (click)="onSubmit()">Submit Form</button>
+    
+    </form>
+
+ </section>
+
+</div>

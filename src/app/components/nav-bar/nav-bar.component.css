@@ -1,0 +1,20 @@
+h1 {
+    color: #673ab7;
+    padding: 20px 0 0 20px;
+}
+
+nav {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #46257e;
+}
+
+a {
+    margin-right:10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+span {
+    margin-right:10px;
+}

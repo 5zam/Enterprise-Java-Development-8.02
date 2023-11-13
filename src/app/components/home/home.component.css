@@ -1,0 +1,60 @@
+.home-container {
+    background-color: rgb(183, 163, 201);
+    padding: 80px;
+}
+
+.photo-card {
+    margin-bottom: 20px;
+}
+
+.info-card {
+    padding: 20px;
+}
+
+.projects {
+    background-color: rgb(183, 163, 201);
+    padding: 20px;
+    text-align: center;
+  }
+  .projects h2 {
+    font-size: 24px;
+    margin-bottom: 10px; /* Reduce the margin to control space */
+    font-family: "Your Font Family", sans-serif; /* Add your desired font-family here */
+    color: #333; /* Change the font color to your preference */
+    text-transform: uppercase; /* Make text uppercase */
+    font-weight: bold; /* Add bold style */
+  }
+  /* Style the Project List */
+  .project-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-list li {
+    margin: 20px;
+  }
+  /* Style the Project Cards */
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .project-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .project-card {
+      max-width: 100%;
+    }
+    .project-list li {
+      flex: 0 0 100%;
+    }
+  }

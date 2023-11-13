@@ -1,0 +1,12 @@
+body {
+
+    border: 0.1px solid #00000000;
+    background-image: url('../../../assets/NotFoundImage.png');
+    background-repeat: no-repeat;
+    background-size: 950px;
+    background-position: bottom right;
+}
+
+div {
+    margin: 200px;
+}
